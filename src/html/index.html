@@ -12,14 +12,17 @@
                     </picture>
                     <p class="main-header__text">Для людей, горящих сердцем и делом место для настоящего</p>
                 </header>
-                <header class="main-header home__main-header"></header>
-                <section class="offers home__offers"></section>
-                <section class="about home__about"></section>
-                <section class="upcoming home__upcoming"></section>
+                
+                @@include("blocks/offers.html", {class: 'home__offers'})
+                @@include("blocks/about.html", {class: 'home__about'})
+                @@include("blocks/index-events.html", {class: 'home__index-events'})
+                @@include("blocks/blog-listing.html", {class: 'home__listing'})
+                @@include("blocks/contacts.html", {class: 'home__contacts'})
+
 
             </div>
         </main>
         @@include('blocks/page-footer.html')
-        
+        @@include("blocks/event-pp.html")
     </body>
 </html>
